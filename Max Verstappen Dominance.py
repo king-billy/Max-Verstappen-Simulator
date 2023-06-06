@@ -1,5 +1,4 @@
 import numpy as np
-from sklearn.linear_model import LogisticRegression
 import regression_model
 from driver_scores import driver_points
 from points import POINTS, SPRINT_POINTS, FASTEST_LAP_POINTS
@@ -11,9 +10,10 @@ talent_scores = [0.70, 0.07, 0.05, 0.07, 0.05, 0.015, 0.015, 0.011, 0.0034, 0.00
 
 car_performance = [1.0, 1.0, 0.6, 0.8, 0.8, 0.5, 0.5, 0.6, 0.4, 0.4, 0.3, 0.1, 0.3, 0.2, 0.2, 0.15, 0.1, 0.12, 0.15, 0.12]
 
-labels = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+labels = [1.0, 1.0, 0.6, 0.8, 0.8, 0.5, 0.5, 0.6, 0.4, 0.4, 0.3, 0.1, 0.3, 0.2, 0.2, 0.15, 0.1, 0.12, 0.15, 0.12] #placeholder data
 
 probabilities = regression_model.find_prob(talent_scores, car_performance, labels)
+print(probabilities)
 races_cnt = len(races_left)
 sprint_cnt = len(sprint_races)
 for race in races_left:
