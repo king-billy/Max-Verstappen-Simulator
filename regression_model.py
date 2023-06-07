@@ -4,7 +4,7 @@ import numpy as np
 from model_metrics import X, y
 
 def find_prob():
-    kf = KFold(n_splits=5)
+    kf = KFold(n_splits=23)
     for train_index, test_index in kf.split(X):
         X_train, X_test = X[train_index], X[test_index]
         y_train, y_test = y[train_index], y[test_index]
@@ -13,12 +13,14 @@ def find_prob():
     model.fit(X_train, y_train)
 
     probabilities = np.array(model.predict(X_test))
+    
+    #prob = np.array(prob)
+    #prob /= prob.sum()
+    probabilities /= probabilities.sum()
+    return probabilities
+
+def func():
     prob = [0, 0, 0, 0, 0]
     for i in range(5):
         driver_predictions = probabilities[i::5]
         prob[i] = np.mean(driver_predictions)
-    
-    prob = np.array(prob)
-    prob /= prob.sum()
-    return prob
-
