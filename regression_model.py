@@ -18,9 +18,3 @@ def find_prob():
     #prob /= prob.sum()
     probabilities /= probabilities.sum()
     return probabilities
-
-def func():
-    prob = [0, 0, 0, 0, 0]
-    for i in range(5):
-        driver_predictions = probabilities[i::5]
-        prob[i] = np.mean(driver_predictions)
