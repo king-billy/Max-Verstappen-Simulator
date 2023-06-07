@@ -11,3 +11,6 @@ This is only for shits and giggles, I was bored and this is the minimal amount o
 
 
 If you wanna try it out, run Max Verstappen Dominance.py (the model spits out a mid to late mid season race, cuz the model is kinda reasonable rn. I'm gonna train it better to account for the sheer dump Red Bull and Max are taking on the entire motor racing scene at the moment (LIKE WHO WINS A RACE A WHOLE HALF A MINUTE AHEAD OF THE P2 WTF, BRO JUST SETS THE FASTEST LAP CUZ HE GETS BORED RACING GODDAMN).
+
+
+P.S. The data is really terrible. It's goofy metrics I made up. Please spare me the embarrasment and don't look at it.
