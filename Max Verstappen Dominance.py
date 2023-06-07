@@ -6,13 +6,8 @@ from season2023 import races_left, sprint_races
 
 drivers = list(driver_points.keys())
 
-talent_scores = [0.70, 0.07, 0.05, 0.07, 0.05, 0.015, 0.015, 0.011, 0.0034, 0.0033, 0.0033, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001]
 
-car_performance = [1.0, 1.0, 0.6, 0.8, 0.8, 0.5, 0.5, 0.6, 0.4, 0.4, 0.3, 0.1, 0.3, 0.2, 0.2, 0.15, 0.1, 0.12, 0.15, 0.12]
-
-labels = [1.0, 1.0, 0.6, 0.8, 0.8, 0.5, 0.5, 0.6, 0.4, 0.4, 0.3, 0.1, 0.3, 0.2, 0.2, 0.15, 0.1, 0.12, 0.15, 0.12] #placeholder data
-
-probabilities = regression_model.find_prob(talent_scores, car_performance, labels)
+probabilities = regression_model.find_prob()
 print(probabilities)
 races_cnt = len(races_left)
 sprint_cnt = len(sprint_races)

@@ -1,4 +1,4 @@
-races_left = ["Canada", "Austria", "Silverstone", "Hungaroring", "Spa", "Zandvoort", "Monza", "Singapore", "Suzuka", "Qatar", "COTA", "Interlagos", "Vegas", "Yas Marina"]
+races_left = ["Canada", "Austria", "Silverstone", "Hungaroring", "Spa", "Zandvoort", "Monza", "Singapore", "Suzuka", "Qatar", "COTA", "Mexico", "Interlagos", "Vegas", "Yas Marina"]
 sprint_races = ["Austria", "Spa", "Qatar", "COTA", "Interlagos"]
 
 #so far, we are done with the Spanish GP

@@ -1,4 +1,4 @@
-driver_points = {
+driver_points2 = {
     'Verstappen': 170,
     'Perez': 117,
     'Alonso': 99,
@@ -32,4 +32,11 @@ cars = {
     'Alfa Romeo',
     'Alpine',
     'Haas'
+}
+driver_points = {
+    'Verstappen': 170,
+    'Perez': 117,
+    'Alonso': 99,
+    'Hamilton': 87,
+    'Russell': 65,
 }
